@@ -1,3 +1,6 @@
+import Image from "next/image";
+import peopleImg from "@/public/people1.png";
+
 export default function Sobre() {
   return (
     <section className="flex justify-between gap-4 pb-10">
@@ -24,8 +27,8 @@ export default function Sobre() {
           </p>
         </div>
       </div>
-      <img
-        src="/people1.png"
+      <Image
+        src={peopleImg}
         alt="Ilustração de pessoas"
         className="h-full w-lg"
       />

@@ -1,6 +1,8 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
+import peopleImg from "@/public/people.png";
 
 export default function Home() {
   return (
@@ -17,8 +19,8 @@ export default function Home() {
       >
         Busque Uma Vaga
       </Link>
-      <img
-        src="/people.png"
+      <Image
+        src={peopleImg}
         alt="Ilustração de pessoas"
         className="mx-auto mt-12"
       />
