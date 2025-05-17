@@ -1,5 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -15,12 +16,12 @@ export default function NotFound() {
       <p className="text-3xl font-extralight text-gray-400">
         Não foi possível encontrar a página solicitada.
       </p>
-      <a
+      <Link
         className={cn("mt-10 block", buttonVariants({ variant: "default" }))}
         href="/"
       >
         Voltar à Home
-      </a>
+      </Link>
     </main>
   );
 }
