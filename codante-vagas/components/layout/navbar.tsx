@@ -1,7 +1,7 @@
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Logo from "./logo";
-import { buttonVariants } from "../ui/button";
 import Link from "next/link";
+import Logo from "./logo";
 
 export default function Navbar() {
   return (

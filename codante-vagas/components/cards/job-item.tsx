@@ -1,12 +1,7 @@
-import { Button } from "../ui/button";
-
-type Job = {
-  id: string;
-  title: string;
-  company: string;
-  city: string;
-  salary: number;
-};
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { Job } from "@/lib/types";
+import Link from "next/link";
 
 type JobItemProps = {
   job: Job;
@@ -21,9 +16,12 @@ export default function JobItem({ job }: JobItemProps) {
       <h4 className="font-light text-gray-500">{job.company}</h4>
       <h4 className="font-light text-gray-500">{job.city}</h4>
       <h4 className="font-light text-gray-500">R$ {job.salary}</h4>
-      <Button className="cursor-pointer" variant={"outline"}>
+      <Link
+        href={`/vagas/${job.id}`}
+        className={cn(buttonVariants({ variant: "outline" }))}
+      >
         Mais
-      </Button>
+      </Link>
     </article>
   );
 }

@@ -1,8 +1,8 @@
-import Navbar from "@/components/layout/navbar";
 import "./globals.css";
-import Footer from "@/components/layout/footer";
-import { Metadata } from "next";
 import { Maven_Pro } from "next/font/google";
+import { Metadata } from "next";
+import Footer from "@/components/layout/footer";
+import Navbar from "@/components/layout/navbar";
 
 const mavenPro = Maven_Pro({
   weight: "variable",
